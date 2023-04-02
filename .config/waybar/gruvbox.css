@@ -1,0 +1,118 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+@keyframes blink_red {
+  to {
+    background-color: #cc241d;
+    color: #282828;
+  }
+}
+.warning, .critical, .urgent {
+  animation-name: blink_red;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+window#waybar {
+  background-color: transparent;
+}
+window > box {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #282828;
+}
+#workspaces {
+  padding-left: 0px;
+  padding-right: 4px;
+}
+#workspaces button.active{
+  background-color: #fe8019;
+  color: #282828;
+}
+#workspaces button.urgent {
+  color: #fb4934;
+}
+#workspaces button:hover {
+  background-color: #fabdf2;
+  color: #282828;
+}
+tooltip {
+  background: #3c3836;
+}
+tooltip label {
+  color: #fbf1c7;
+}
+#custom-launcher {
+  padding-left: 8px;
+  padding-right: 6px;
+  color: #fe8019;
+  background-color: #1d2021;
+}
+#mode, #clock, #memory, #temperature,#cpu,#mpd, #idle_inhibitor, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #custom-cava-internal {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* #mode { */
+/* 	margin-left: 10px; */
+/* 	background-color: rgb(248, 189, 150); */
+/*     color: rgb(26, 24, 38); */
+/* } */
+#memory {
+  color: #83a598;
+}
+#cpu {
+  color: #d3869b;
+}
+#clock {
+  color: #fbf1c7;
+}
+#idle_inhibitor {
+  color: rgb(221, 182, 242);
+}
+#temperature {
+  color: rgb(150, 205, 251);
+}
+#backlight {
+  color: #fe8019;
+}
+#pulseaudio {
+  color: #ebdbb2;
+}
+#network {
+  color: #8ec07c;
+}
+
+#network.disconnected {
+  color: rgb(255, 255, 255);
+}
+#battery.charging, #battery.full, #battery.discharging {
+  color: #fabd2f;
+}
+#battery.critical:not(.charging) {
+  color: #fb4934;
+}
+#custom-powermenu {
+  color: #fb4934;
+  background-color: #1d2021;
+}
+#tray {
+  padding-right: 8px;
+  padding-left: 10px;
+  background-color: #1d2021;
+}
+#custom-playerctl {
+  color: #ebdbb2;
+  padding-left: 8px;
+  font-size: 11px;
+}
+#custom-cava-internal{
+  font-family: "Hack Nerd Font" ;
+  color: #ebdbb2;
+  
+}

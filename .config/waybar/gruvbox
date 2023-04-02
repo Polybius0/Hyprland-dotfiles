@@ -1,0 +1,141 @@
+{ "layer": "top",
+  "modules-left": [
+    "custom/launcher",
+    "wlr/workspaces",
+    "custom/playerctl",
+    "custom/cava-internal",
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "memory",
+    "cpu",
+    "network",
+    "battery",
+    "custom/powermenu",
+    "tray"
+  ],
+  "custom/launcher": {
+    "format": "  ",
+    "on-click": "wofi -s ~/.config/wofi/menu.css",
+    "tooltip": false
+  },
+  "custom/cava-internal": {
+    "exec": "~/.config/waybar/Cava.sh",
+    //"exec": "~/.config/waybar/cava-internal.sh",
+    "tooltip": false
+  },
+"wlr/workspaces": {
+      "on-click": "activate",
+      "all-outputs": true,
+      "persistent_workspaces" :{
+          "1": [],
+	 		    "2": [],
+	 		    "3": [],
+	 		    "4": [],
+	 		    "5": [],
+	 		    "6": [],
+	 		    "7": [],
+	 		    "8": [],
+	 		    "9": [],
+	 		    "10": []
+        },
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "tooltip": false
+  },
+  "backlight": {
+      "device": "amdgpu_b10",
+      "format": "<span>{icon}</span> {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "{icon} {volume}%", 
+    "format-muted": "婢 Muted",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": false,
+  },
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "tooltip": false
+  },
+  "clock": {
+    "on-click": "~/.config/waybar/switch_style1.sh &",
+    "on-click-right": "~/.config/waybar/wallpaper_random.sh &",
+    "on-click-middle": "~/.config/waybar/live_wallpaper.sh &",
+    "interval": 1,
+    "format": "{:%I:%M %p  %A %b %d}",
+    "tooltip": true,
+    /* "tooltip-format": "{:%A, %d %B %Y}\n<tt>{calendar}</tt>" */
+    "tooltip-format": "上午：高数\n下午：Ps\n晚上：Golang\n<tt>{calendar}</tt>",
+  },
+  "memory": {
+    "interval": 1,
+    "format": "﬙ {percentage}%",
+    "states": {
+      "warning": 85,
+    },
+  },
+  "cpu": {
+    "interval": 1,
+    "format": " {usage}%"
+  },
+  "custom/playerctl": {
+     "format": "{icon}<span>{}</span>",
+     "return-type": "json",
+     "max-length": 55,
+     "exec": "playerctl -a metadata --format '{\"text\": \"  {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+     "on-click-middle": "playerctl previous",
+     "on-click": "playerctl play-pause",
+     "on-click-right": "playerctl next",
+     "format-icons": {
+       "Paused": "<span foreground='#eed49f'></span>",
+       "Playing": "<span foreground='#a6da95'></span>"
+     }
+  },
+  "network": {
+    "interval": 1,
+    "format-wifi": "說 {essid}",
+    "format-ethernet": "  {ifname} ({ipaddr})",
+    "format-linked": "說 {essid} (No IP)",
+    "format-disconnected": "說 Disconnected",
+    "tooltip": false
+  },
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon6/temp2_input",
+    //"critical-threshold": 80,
+    "tooltip": false,
+    "format": " {temperatureC}°C"
+  },
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "wlogout",
+    "tooltip": false
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  },
+}
+
