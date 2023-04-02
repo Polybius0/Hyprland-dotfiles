@@ -20,6 +20,8 @@ Hyprland setup with multiple themes
 | Run Menu | Wofi | 
 | Notifications | Mako|
 | File Browser | Ranger |
+| Shell | Fish | 
+| Shell Promt | Starship |
 | Top Bar | Waybar | 
 | Sound visualizer | Cava | 
 
