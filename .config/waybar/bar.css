@@ -1,14 +1,13 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
-  border-radius: 4px;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 @keyframes blink_red {
   to {
-    background-color: rgb(242, 143, 173);
-    color: rgb(26, 24, 38);
+    background-color: #cc241d;
+    color: #282828;
   }
 }
 .warning, .critical, .urgent {
@@ -25,33 +24,38 @@ window > box {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
-  background-color: rgb(30, 30, 46);
+  background-color: #282828;
 }
 #workspaces {
   padding-left: 0px;
   padding-right: 4px;
 }
 #workspaces button.active{
-  background-color: rgb(181, 232, 224);
-  color: rgb(26, 24, 38);
+  background-color: #fe8019;
+  color: #282828;
+  border-radius: 4px;
+}
+#workspaces button {
+  color: #fe8019;
 }
 #workspaces button.urgent {
-  color: rgb(26, 24, 38);
+  color: #fb4934;
 }
 #workspaces button:hover {
-  background-color: rgb(248, 189, 150);
-  color: rgb(26, 24, 38);
+  background-color: #fabdf2;
+  color: #282828;
 }
 tooltip {
-  background: rgb(48, 45, 65);
+  background: #3c3836;
 }
 tooltip label {
-  color: rgb(217, 224, 238);
+  color: #fbf1c7;
 }
 #custom-launcher {
   padding-left: 8px;
   padding-right: 6px;
-  color: rgb(201, 203, 255);
+  color: #fe8019;
+  background-color: #1d2021;
 }
 #mode, #clock, #memory, #temperature,#cpu,#mpd, #idle_inhibitor, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #custom-cava-internal {
   padding-left: 10px;
@@ -63,13 +67,13 @@ tooltip label {
 /*     color: rgb(26, 24, 38); */
 /* } */
 #memory {
-  color: rgb(181, 232, 224);
+  color: #83a598;
 }
 #cpu {
-  color: rgb(245, 194, 231);
+  color: #d3869b;
 }
 #clock {
-  color: rgb(217, 224, 238);
+  color: #fbf1c7;
 }
 #idle_inhibitor {
   color: rgb(221, 182, 242);
@@ -78,39 +82,40 @@ tooltip label {
   color: rgb(150, 205, 251);
 }
 #backlight {
-  color: rgb(248, 189, 150);
+  color: #fe8019;
 }
 #pulseaudio {
-  color: rgb(245, 224, 220);
+  color: #ebdbb2;
 }
 #network {
-  color: #ABE9B3;
+  color: #8ec07c;
 }
 
 #network.disconnected {
   color: rgb(255, 255, 255);
 }
 #battery.charging, #battery.full, #battery.discharging {
-  color: rgb(250, 227, 176);
+  color: #fabd2f;
 }
 #battery.critical:not(.charging) {
-  color: rgb(242, 143, 173);
+  color: #fb4934;
 }
 #custom-powermenu {
-  color: rgb(242, 143, 173);
+  color: #fb4934;
+  background-color: #1d2021;
 }
 #tray {
   padding-right: 8px;
   padding-left: 10px;
+  background-color: #1d2021;
 }
 #custom-playerctl {
-  color: #c0caf5;
+  color: #ebdbb2;
   padding-left: 8px;
   font-size: 11px;
 }
 #custom-cava-internal{
   font-family: "Hack Nerd Font" ;
-  color: rgb(181, 232, 224);
+  color: #ebdbb2;
   
 }
-

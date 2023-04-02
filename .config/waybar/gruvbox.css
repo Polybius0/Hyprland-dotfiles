@@ -1,7 +1,6 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
-  border-radius: 4px;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -34,6 +33,10 @@ window > box {
 #workspaces button.active{
   background-color: #fe8019;
   color: #282828;
+  border-radius: 4px;
+}
+#workspaces button {
+  color: #fe8019;
 }
 #workspaces button.urgent {
   color: #fb4934;
