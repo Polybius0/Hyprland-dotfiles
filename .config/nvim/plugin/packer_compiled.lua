@@ -130,7 +130,7 @@ _G.packer_plugins = {
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
   ["everforest-nvim"] = {
-    config = { "\27LJ\2\n申1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4\fitalics\1!transparent_background_level\3\0\28disable_italic_comments\1\15background\thard\nsetup\15everforest\frequire\0" },
+    config = { "\27LJ\2\n申1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4!transparent_background_level\3\0\28disable_italic_comments\1\15background\thard\fitalics\1\nsetup\15everforest\frequire\0" },
     loaded = true,
     path = "/home/connor/.local/share/nvim/site/pack/packer/start/everforest-nvim",
     url = "https://github.com/neanias/everforest-nvim"
@@ -255,6 +255,11 @@ _G.packer_plugins = {
     path = "/home/connor/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
   },
+  vimtex = {
+    loaded = true,
+    path = "/home/connor/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/connor/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -265,7 +270,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: everforest-nvim
 time([[Config for everforest-nvim]], true)
-try_loadstring("\27LJ\2\n申1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4\fitalics\1!transparent_background_level\3\0\28disable_italic_comments\1\15background\thard\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
+try_loadstring("\27LJ\2\n申1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4!transparent_background_level\3\0\28disable_italic_comments\1\15background\thard\fitalics\1\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
 time([[Config for everforest-nvim]], false)
 
 _G._packer.inside_compile = false
