@@ -557,7 +557,7 @@ schemes:
       white:   '0xe6d5ae'
 
 # Apply
-colors: *gruvbox_material_medium_dark
+colors: *gruvbox_material_hard_dark
 
 # Colors (ArcoLinux)
 #colors:
