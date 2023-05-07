@@ -1,8 +1,8 @@
 layer=top
 markup=1
 anchor=top-right
-background-color=#1E1E28
-text-color=#DADAE8
+background-color=#282828
+text-color=#fbf1c7
 width=350
 height=150
 max-icon-size=90
@@ -15,7 +15,7 @@ border-radius=2
 progress-color=over #332E41
 default-timeout=5000
 group-by=summary
-format=<span font="OperatorMonoSSm Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="OperatorMonoSSm Nerd Font weight=325" size="12288">%b</span>
+format=<span font="DejaVuSansMono Nerd Font weight=400 Italic" size="12288">%s</span>\n<span font="OperatorMonoSSm Nerd Font weight=325" size="12288">%b</span>
 
 [grouped]
 format=<span font="OperatorMonoSSm Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="OperatorMonoSSm Nerd Font weight=325" size="12288">%b</span>
