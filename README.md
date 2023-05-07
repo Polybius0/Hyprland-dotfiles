@@ -7,15 +7,16 @@ Hyprland setup with multiple themes
 ![gruvbox2](/screenshots/gruvbox2.png)
 
 ## Catpuccin
-![catpuccin1](/screenshots/catppuccin1.png)
-![catpuccin2](/screenshots/catppuccin2.png)
+![catpuccin1](/screenshots/catppucin1.png)
+![catpuccin2](/screenshots/catpuccin2.png)
 
 ## Everforest
 ![everforest1](/screenshots/everforest1.png)
 ![everforest2](/screenshots/everforest2.png)
 
-| Terminal | Alacritty |
+| Usage | Program |
 | ----------- | ----------- |
+| Terminal | Alacritty |
 | Text Editor | Nvim |
 | Run Menu | Wofi | 
 | Notifications | Mako|
@@ -24,6 +25,7 @@ Hyprland setup with multiple themes
 | Shell Promt | Starship |
 | Top Bar | Waybar | 
 | Sound visualizer | Cava | 
+| PDF viewer | Zathura |
 
 # Usage
 - Use ```~/.config/hypr/themeset.sh``` to switch themes
